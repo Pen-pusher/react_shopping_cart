@@ -27,6 +27,7 @@ div {
   font-weight: bold;
   color: #1b1a20;
   font-family: Roboto, sans-serif;
+  margin-left: 12px;
 }
 .available-sizes {
   display: inline-block;
@@ -126,8 +127,13 @@ input {
   background-color: #1b1a20;
   cursor: default;
   font-weight: 600;
-  color: tomato;
 }
+
+.rightcontainer-item:hover .freeshipping {
+  color: tomato;
+  font-size: 12px;
+}
+
 img {
   width: 100%;
 }

@@ -23,7 +23,7 @@ class Product extends React.Component {
       case "highestprice":
         this.setState({ currentData: this.dataSort().reverse() });
         break;
-      case "lowestprice":
+      case "  ":
         this.setState({ currentData: this.dataSort() });
         break;
       default:
@@ -33,6 +33,7 @@ class Product extends React.Component {
   };
 
   addToCart = val => {
+    console.log(val);
     this.setState({ cart: this.state.cart.concat(val) });
   };
 
@@ -54,8 +55,8 @@ class Product extends React.Component {
             Order by
             <select onChange={this.changeDisplay}>
               <option value="default">Select</option>
-              <option value="lowestprice">Lowest To Highest</option>
-              <option value="highestprice">Highest To Lowest</option>
+              <option value="lowestprice">Highest To Lowest</option>
+              <option value="highestprice">Lowest To Highest</option>
             </select>
           </div>
         </div>
